@@ -123,7 +123,7 @@ else disp ('you did not choose a Scenario');    %#ok
 end
 pause(0.1)
 %% Save to computer
-%choose a folder
+%choose/create a folder
 areaLoc = ['C:/CMIP6/', area, '/']; 
 if ~exist(areaLoc) %#ok
     mkdir(areaLoc)
