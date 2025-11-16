@@ -4,6 +4,6 @@ This repository contains two MATLAB scripts designed to simplify working with NA
 
 CMIP66cleancode.m — Interactive tool to download CMIP6 NetCDF files for any climate model, scenario, variable, and year range.
 
-extract_timeseries.m — Extracts time-series data from downloaded NetCDF files for a user-defined geographic coordinate (lat/lon).
+extractdataPr.m — Extracts Precipitation(as an example) time-series data from downloaded NetCDF files for a user-defined geographic coordinate (lat/lon, in this code for Tamale, Ghana ).
 
 Both scripts are intended for researchers working with climate change impact assessment, hydrology, drought/flood modeling, or regional climate analysis.
