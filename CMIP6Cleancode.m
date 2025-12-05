@@ -50,6 +50,7 @@ elseif indx==35;    model='ACCESS-CM2';rpf='r1i1p1f1';
 else disp ('you did not choose a model');    %#ok
 end
 pause(0.1)
+% check all gn and rpf  once more in https://ds.nccs.nasa.gov/thredds/catalog/AMES/NEX/GDDP-CMIP6/catalog.html
 if indx==11 gn='_gr1_'; %#ok
 elseif indx==12 gn='_gr_'; %#ok
 elseif indx==13 gn='_gr_'; %#ok
@@ -162,5 +163,6 @@ fileName=[ncLoc,Dataset,'_',model,'_',SC,'_',num2str(y),'.nc'];
 outfilename = websave(fileName,URL,option);      
 end
 end
+
 
 
