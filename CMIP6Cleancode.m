@@ -146,16 +146,21 @@ pause(0.1)
 option = weboptions('Timeout',Inf);
 if indx==21
 for y=min(years):max(years)
-URL=['https://ds.nccs.nasa.gov/thredds/catalog/AMES/NEX/GDDP-CMIP6/',model,'/',SC,'/',rpf,'/',Dataset,'/',Dataset,'_day_GFDL-CM4_',SC,'_',rpf,gn,num2str(y),'.nc'];
+URL = ['https://ds.nccs.nasa.gov/thredds/fileServer/AMES/NEX/GDDP-CMIP6/', ...
+       model, '/', SC, '/', rpf, '/', Dataset, '/', ...
+       Dataset, '_day_GFDL-CM4_', SC, '_', rpf, gn, num2str(y), '_v2.0.nc'];
 fileName=[ncLoc,Dataset,'_',model,'_',SC,'_',num2str(y),'.nc'];
 outfilename = websave(fileName,URL,option);      
 end    
     
 else
 for y=min(years):max(years)
-URL=['https://ds.nccs.nasa.gov/thredds/catalog/AMES/NEX/GDDP-CMIP6/',model,'/',SC,'/',rpf,'/',Dataset,'/',Dataset,'_day_',model,'_',SC,'_',rpf,gn,num2str(y),'.nc'];
+URL = ['https://ds.nccs.nasa.gov/thredds/fileServer/AMES/NEX/GDDP-CMIP6/', ...
+       model, '/', SC, '/', rpf, '/', Dataset, '/', ...
+       Dataset, '_day_', model, '_', SC, '_', rpf, gn, num2str(y), '_v2.0.nc'];
 fileName=[ncLoc,Dataset,'_',model,'_',SC,'_',num2str(y),'.nc'];
 outfilename = websave(fileName,URL,option);      
 end
 end
+
 
